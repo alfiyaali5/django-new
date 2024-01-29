@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  font-family: Arial;
+}
+
+.text-block {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+</style>
+<style>
+    .background-div {
+      background-image:url("member/static/stock.jpg");
+      position:relative;
+    }
+    .href:after {
+      position:absolute;
+      top:0;
+      left:0;
+      content:"";
+     }
+ </style>
+</head>
+<body>
+    <div class="container">
+            <div class="background-div">
+           <i> Click here to visit the store<a style="font-weight:bold" href="/book" class="href">Visit-></a></i>
+        </div>
+        <img  src="{% static 'stock.jpg' %}" alt="Nature" style="width:100%;">
+        <div class="text-block">
+          <h1>YOUR FAVORITE ONLINE</h1>
+                <h1>BOOKSTORE</h1>        
+        </div>
+      </div>
+</body>
+</html> 
+      
